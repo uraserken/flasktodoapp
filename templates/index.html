@@ -25,8 +25,8 @@
     Yapılacak herhangi bir işiniz bulunmamaktadır!
     </div>
     {% else %}
-    {% for todo in todos %}  
-        <table class="table">
+
+    <table class="table">
         <thead>
         <tr>
         <th scope="col">Todo Başlık</th>
@@ -36,6 +36,7 @@
         </tr>
         </thead>
         <tbody>
+    {% for todo in todos %}  
        
         <tr>
         <td>{{todo.title}}</td>
